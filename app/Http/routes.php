@@ -27,6 +27,7 @@ Route::bind('projects', function($value, $route) {
 	return App\Project::whereSlug($value)->first();
 });
 
-
 Route::resource('projects', 'ProjectsController');
 Route::resource('projects.tasks', 'TasksController');
+Route::get('blog', 'BlogController@index');
+Route::get('blog/{slug}', 'BlogController@showPost');
