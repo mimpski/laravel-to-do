@@ -1,2 +1,6 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'base/normalise.scss';
+@import 'base/type.scss';
+@import 'base/variables.scss';
 
+@import 'partials/header.scss';
+@import 'partials/footer.scss';
