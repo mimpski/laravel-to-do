@@ -2,7 +2,11 @@
 <html>
     <head>
         <title>Laravel</title>
-        <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+        @if (app()->isLocal())
+            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        @else
+            <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+        @endif
     </head>
     <body>
       <header>

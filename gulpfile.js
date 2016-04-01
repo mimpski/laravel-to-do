@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-
+require('laravel-elixir-browser-sync-simple');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -23,5 +23,6 @@ elixir(function(mix) {
       .version([
         'public/js/scripts.js',
         'public/css/app.css'
-      ]);
+      ])
+       .browserSync({ proxy: 'todo.app' });
 });
