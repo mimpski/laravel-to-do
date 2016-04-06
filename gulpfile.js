@@ -17,8 +17,9 @@ elixir(function(mix) {
       'libs/jquery.js',
       'libs/bootstrap.min.js',
       'libs/datatables.js',
-      'two.js',
-      'three.js'
+      'libs/selectize.js',
+      'libs/picker.js',
+      'libs/picker.date.js'
     ], './public/js/scripts.js')
       .version([
         'public/js/scripts.js',
