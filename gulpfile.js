@@ -16,7 +16,7 @@ elixir(function(mix) {
     mix.scripts([
       'libs/jquery.js',
       'libs/bootstrap.min.js',
-      'one.js',
+      'libs/datatables.js',
       'two.js',
       'three.js'
     ], './public/js/scripts.js')
