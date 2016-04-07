@@ -1,3 +1,6 @@
+@import "//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic";
+@import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'";
+
 @import 'base/normalise.scss';
 @import 'base/type.scss';
 @import 'base/variables.scss';
@@ -6,6 +9,9 @@
 @import 'libs/selectize.min.scss';
 @import 'libs/default.scss';
 @import 'libs/default.date.scss';
+@import 'libs/clean-blog.min.scss';
 
 @import 'partials/header.scss';
 @import 'partials/footer.scss';
+
+@import 'base/styling.scss';
