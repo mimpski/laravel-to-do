@@ -19,7 +19,8 @@ elixir(function(mix) {
       'libs/datatables.js',
       'libs/selectize.js',
       'libs/picker.js',
-      'libs/picker.date.js'
+      'libs/picker.date.js',
+      'libs/clean-blog.min.js'
     ], './public/js/scripts.js')
       .version([
         'public/js/scripts.js',

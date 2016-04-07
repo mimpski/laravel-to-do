@@ -43,8 +43,12 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $e
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $e)
-    {
-        return parent::render($request, $e);
-    }
+     public function render($request, Exception $e)
+ {
+     if($e instanceof ModelNotFoundException)
+     {
+         return response()->view('errors.custom', compact('e'));
+     }
+     return parent::render($request, $e);
+ }
 }
